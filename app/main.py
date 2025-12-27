@@ -1,10 +1,9 @@
-from fastapi import FastAPI
+from fastapi import FastAPI,Depends
 from api import get_routes
-import uvicorn
 
 def init_app():
     app = FastAPI(
-        title="FastAPI Starter",
+        title="FastAPI",
         description="Basic FastAPI template",
         version="1.0.0"
     )
